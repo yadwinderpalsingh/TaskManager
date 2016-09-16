@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
     void addTask(View v){
         // add the text from the text field to tak list
         EditText textbox = (EditText)findViewById(R.id.taskName);
-        var text = textbox.getText().toString();
-        items.add(text.getText().toString());
+        String text = textbox.getText().toString();
+        items.add(text);
         myAdapter.notifyDataSetChanged();
-        text.setText("");
+        textbox.setText("");
     }
 }
 
